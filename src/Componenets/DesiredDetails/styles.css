@@ -1,0 +1,46 @@
+
+.items-container{
+    padding : 10px;
+    border : 1px solid black;
+}
+.container-out{
+  width : 100%;
+  display: flex;
+}
+.brand-container {
+    width : 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow-y: auto;
+    max-height: 300px; /* Set your desired maximum height */
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  .brand-image {
+    width: calc(25% - 10px); /* 4 images per row with 10px spacing in between */
+    margin: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .brand-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+  .category-item {
+   /* width: calc(25% - 10px); /* 4 images per row with 10px spacing in between */
+    margin: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer
+  }

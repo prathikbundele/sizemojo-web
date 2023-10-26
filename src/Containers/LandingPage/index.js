@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import DesiredDetailsComp from '../../Componenets/DesiredDetails/DesiredDetailsComp';
 import CurrentDetailsComp from '../../Componenets/CurrentDetails/CurrentDetailsComp';
+import ResultPage from '../ResultPage/ResultPage'
 import { Row, Col } from 'antd';
 import './styles.css'
 
-const LandingPage = () => {
+const LandingPage = (props) => {
     const [step, setStep] = useState(1);
 
     const renderComponent = (step) => {
@@ -13,6 +14,8 @@ const LandingPage = () => {
                 return <DesiredDetailsComp step={step} setStep={setStep} />
             case 2:
                 return <CurrentDetailsComp step={step} setStep={setStep} />
+            case 3:
+                props.setCurrentPage("result")
             default:
                 return <DesiredDetailsComp step={step} setStep={setStep} />
         }
